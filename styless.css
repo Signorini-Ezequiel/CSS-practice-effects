@@ -1,0 +1,42 @@
+body {
+    background-color: cornsilk;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-name: rainbow;
+}
+
+@keyframes rainbow {
+    0% {
+        background-color: red;
+        margin-top: 5vh;
+        margin-left: 30%;
+    }
+    25% {
+        background-color: blue;
+        margin-top: 50vh;
+        margin-left: 30%;
+        opacity: 0%;
+    }
+    50% {
+        margin-top: 50vh;
+        margin-left: calc(90% - 300px);
+    }
+    75% {
+        background-color: aquamarine;
+        margin-top: 5vh;
+        margin-left: calc(90% - 300px);
+    }
+    100% {
+        background-color: brown;
+        margin-top: 5vh;
+        margin-left: 30%;
+        opacity: 100%;
+    }
+}
